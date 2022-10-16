@@ -46,13 +46,38 @@ header{
 }
 
 section {
-    max-width: 100%;
     background-color: #8ba5aa;
     border-radius: 15px;
     padding: 15px;
-    width: 500px;
+    max-width: 500px;
     margin: auto;
     box-shadow: 2px 2px 7px #5a8d97;
+}
+
+@media (max-width: 425px) {
+    section {
+        max-width: 360px;
+    }
+}
+
+@media (max-width: 375px) {
+    section {
+        max-width: 320px;
+    }
+
+    #img {
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 320px) {
+    section {
+        max-width: 270px;
+    }
+
+    #img {
+        max-width: 170px;
+    }
 }
 
 footer{
@@ -72,7 +97,7 @@ footer{
 }
 
 #img {
-    max-width: 200px;
+    width: 200px;
     border-radius: 50%;
 }
 
